@@ -1,0 +1,12 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.logo{
+    margin-top: 100rpx;
+    width: 210rpx; 
+    height: 210rpx; 
+    border-radius: 50%; 
+}

@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+    <image class="logo" src="/components/images/logo.jpg"></image>
+</view>
+
