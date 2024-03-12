@@ -1,12 +1,67 @@
-/**index.wxss**/
-page {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* index.wxss */
+Page {
+    display: flexbox; 
 }
-.logo{
-    margin-top: 100rpx;
-    width: 210rpx; 
-    height: 210rpx; 
-    border-radius: 50%; 
+
+.logo {
+    margin-top: 95rpx;
+    width: 130rpx;
+    height: 130rpx;
+    border-radius: 50%;
+}
+
+.toggle-eye-btn {
+    height: 70rpx; 
+    width: 20%;
+    background-color: #fff;
+}
+
+.eyeicon {
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.num, .pass {
+    display: flex;
+    align-items: center;
+    margin-top: 130rpx; 
+    height: 90rpx; 
+    width: 74%;
+}
+
+.pass{
+    margin-top: 25rpx;
+}
+
+.usericon, .lockicon {
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 10rpx;
+}
+
+.inputnum, .inputpass {
+    flex: 1;
+    height: 100%; 
+    border: none; 
+    padding: 0 10rpx;
+}
+
+.login-btn {
+    margin-top: 90rpx; 
+    width: 75%;
+    height: 80rpx;
+    background-color: rgb(86, 219, 208);
+    color: #fff;
+    border: none;
+    border-radius: 10rpx;
+}
+
+.signup-btn {
+    margin-top: 30rpx; 
+    width: 75%;
+    height: 80rpx;
+    background-color: rgba(255, 255, 255, 0); 
+    color: rgb(86, 219, 208);
+    border: 1rpx solid  rgb(86, 219, 208);   
+    border-radius: 10rpx;
 }

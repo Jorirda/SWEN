@@ -5,7 +5,7 @@
     "window": {
         "navigationBarBackgroundColor": "#ffffff",
         "navigationBarTextStyle": "black",
-        "navigationBarTitleText": "Testing",
+        "navigationBarTitleText": "登录",
         "backgroundColor": "#eeeeee",
         "backgroundTextStyle": "light",
         "enablePullDownRefresh": true

@@ -1,5 +1,28 @@
-<!--index.wxml-->
+<!-- index.wxml -->
 <view class="container">
-    <image class="logo" src="/components/images/logo.jpg"></image>
+    <image class="logo" src="/images/logo.jpg"></image>
+    <view class="num">
+        <image class="usericon" src="/images/user.png"></image>
+        <input class="inputnum" placeholder="请输入手机号码" bindinput="handleUsernameInput"/>
+    </view>
+    <view class="pass">
+        <image class="lockicon" src="/images/unlock.png"></image>
+        <input class="inputpass" type="{{passwordInputType}}" placeholder="请输入登录密码" bindinput="handlePasswordInput"/>
+        <button class="toggle-eye-btn" bindtap="togglePasswordVisibility">
+            <image class="eyeicon" src="{{eyeIcon}}"></image>
+        </button>
+    </view>
+    <button class="login-btn" bindtap="handleLogin">登录</button>
+    <button class="signup-btn" bind:tap="handleSignup">注册</button>
 </view>
+
+
+
+
+
+
+
+
+
+
 
