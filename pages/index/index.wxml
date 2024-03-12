@@ -1,0 +1,61 @@
+<!--index.wxml-->
+
+<t-navbar> <view slot = "left" class = "custom-title ">Homepage</view > 
+</t-navbar > 
+
+
+<scroll-view class="scrollarea" scroll-y type="list" show-scrollbar="{{ true }}" style="width: 750rpx; height: 1279rpx; display: block; box-sizing: border-box">
+  <view class="container">
+    Location Picker goes Here
+  </view>
+  <t-search model:value="{{value}}" placeholder="Search"></t-search>
+  <t-swiper current="{{0}}" autoplay="{{true}}" duration="{{500}}" interval="{{5000}}" list="{{swiperList}}" navigation="{{ { type: 'dots-bar' } }}"></t-swiper>
+
+
+  <t-grid class="block" column="{{5}}" hover="{{ true }}">
+    <t-grid-item text="标题文字" icon="city-7" />
+    <t-grid-item text="标题文字" icon="microphone-2" />
+    <t-grid-item text="标题文字" icon="usergroup" />
+    <t-grid-item text="标题文字" icon="send" />
+    <t-grid-item text="最多四字" icon="time" />
+    <t-grid-item text="标题文字" icon="shop-1" />
+    <t-grid-item text="标题文字" icon="flag" />
+    <t-grid-item text="标题文字" icon="support" />
+    <t-grid-item text="标题文字" icon="icon" />
+    <t-grid-item text="最多四字" icon="bookmark" />
+  </t-grid>
+  Tickets
+  <scroll-view scroll-x="True">
+    <view class='ticket-list'>
+      <view class="ticket-item" wx:for="{{ticketList}}" wx:key="index">
+        <image class='ticket-img' src='/components/images/ticket.png'></image>
+      </view>
+    </view>
+  </scroll-view>
+
+  <t-divider class="td-divider" content="Blue Text" />
+  <view class="audition">
+    <text>Audition</text>
+    <view class="box-a">
+      <t-input style="{{style}}" label="Label text" placeholder="Please enter text" align="right" />
+      <t-input style="{{style}}" label="Label text" placeholder="Please enter text" align="right" />
+    </view>
+    <view class="box-b">
+      <t-input style="{{style}}" label="Label text" placeholder="Please enter text" align="right" />
+    </view>
+    <t-button theme="primary" block content="Submit"></t-button>
+  </view>
+
+
+
+
+
+
+
+
+
+  
+</scroll-view>
+    <t-tab-bar value="home" bindchange="onChange" theme="tag" split="{{true}}">
+      <t-tab-bar-item wx:for="{{[{value: 'home',label: 'Home',icon: 'home'},{value: 'mall',label: 'Mall',icon: 'shop'},{value: 'crm',label: 'CRM',icon: 'book'},{value: 'growth',label: 'Growth',icon: 'chat'},{value: 'profile',label: 'Profile',icon: 'user'}]}}" wx:for-item="item" wx:for-index="index" wx:key="index" icon="{{item.icon}}" value="{{item.value}}"></t-tab-bar-item>
+    </t-tab-bar>

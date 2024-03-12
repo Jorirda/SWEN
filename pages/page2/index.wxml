@@ -1,0 +1,7 @@
+<!--pages/page2/index.wxml-->
+<t-navbar class="custom-navbar" left-arrow title="Page 2" />
+<text>pages/page2/index.wxml</text>
+
+<t-tab-bar value="label_2" bindchange="onChange" theme="tag" split="{{true}}">
+      <t-tab-bar-item wx:for="{{[{value: 'label_1',label: '标签栏一',icon: 'app'},{value: 'label_2',label: '标签栏二',icon: 'app'}]}}" wx:for-item="item" wx:for-index="index" wx:key="index" value="{{item.value}}">{{item.label}}</t-tab-bar-item>
+    </t-tab-bar>

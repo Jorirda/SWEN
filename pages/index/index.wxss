@@ -1,0 +1,28 @@
+/**index.wxss**/
+.ticket-item{
+  padding: 10rpx;
+}
+.ticket-list{
+display: flex;
+}
+.ticket-img{
+  width: 360rpx; height: 220rpx; display: inline-block; box-sizing: border-box
+}
+.td-divider{
+  --td-divider-color: blue;
+  --td-divider-content-color: blue;
+
+}
+.audition{
+  text-align: center;
+}
+.box-a{
+  border-radius: 40rpx;
+}
+
+.box-b{
+  border-radius: 40rpx;
+}
+.icons{
+  size: 90rpx;
+}
