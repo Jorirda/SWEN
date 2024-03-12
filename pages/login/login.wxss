@@ -5,8 +5,8 @@ Page {
 
 .logo {
     margin-top: 95rpx;
-    width: 130rpx;
-    height: 130rpx;
+    width: 180rpx;
+    height: 180rpx;
     border-radius: 50%;
 }
 
@@ -50,7 +50,6 @@ Page {
     margin-top: 90rpx; 
     width: 75%;
     height: 80rpx;
-    background-color: rgb(86, 219, 208);
     color: #fff;
     border: none;
     border-radius: 10rpx;
@@ -60,7 +59,6 @@ Page {
     margin-top: 30rpx; 
     width: 75%;
     height: 80rpx;
-    background-color: rgba(255, 255, 255, 0); 
     color: rgb(86, 219, 208);
     border: 1rpx solid  rgb(86, 219, 208);   
     border-radius: 10rpx;

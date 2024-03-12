@@ -1,14 +1,14 @@
 {
     "pages": [
-      "pages/login/login"
+        "pages/login/login",
+        "pages/page2/page2",
+        "pages/page3/page3" 
     ],
     "window": {
         "navigationBarBackgroundColor": "#ffffff",
         "navigationBarTextStyle": "black",
         "navigationBarTitleText": "登录",
         "backgroundColor": "#eeeeee",
-        "backgroundTextStyle": "light",
-        "enablePullDownRefresh": true
+        "backgroundTextStyle": "light"
     }
-
 }
